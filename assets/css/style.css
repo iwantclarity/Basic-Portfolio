@@ -32,7 +32,7 @@ a.nav {
 }
 
 .sidebar {
-	width:200px;
+	width:210px;
 	margin: 20px;
 	padding: 10px;
 	float: left;
@@ -42,7 +42,7 @@ a.nav {
 header {
 	background-color: #ffffff;
 	height: 80px;
-	border-bottom: 2px solid #cccccc;
+	border-bottom: 3px solid #cccccc;
 }
 
 
@@ -61,13 +61,46 @@ footer {
 	height: 40px;
 	clear: both;
 	padding-top: 28px;
-
 }
 
 h1 {
 	color: white;
+	font-size: 35px;
+	margin-top: 20px;
+
+}
+
+h2 {
+	font-size: 28px;
+	color: #4aaaa5;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 23px;
+	color: #4aaaa5;
+	margin: 10px 0 20px;
 }
 
 p {
 	color: #777777;
+	margin: 10px;
+}
+
+hr {
+	margin: 20px 0;
+}
+
+.icon {
+	width: 60px;
+	height: 60px;
+	}
+
+.picofme {
+	float: left;
+	margin: 0 10px 0 10px;
+	width: 200px;
+	height: 200px;
 }
