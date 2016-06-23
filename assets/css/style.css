@@ -1,3 +1,4 @@
+
 #name {
 	width: 20%;
 	margin-left: 20%;
@@ -20,6 +21,11 @@ a.nav {
 	margin-right: 10px;
 	margin-left: 10px;
 	color: #777777;
+}
+
+a.nav:hover {
+	color: #FF0000;
+	font-weight: bold;
 }
 
 .content {
@@ -70,6 +76,10 @@ input[type=submit] {
     font-size: 20px;
 }
 
+input[type=submit]:hover {
+	background-color: #FF0000;
+}
+
 textarea {
 	height: 150px;
 }
@@ -81,6 +91,15 @@ textarea {
   display: inline-block;
   margin: 10px;
 }
+
+.portfolio:hover  {
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
 .banner {
   position: absolute;
   top: 140px;
@@ -125,7 +144,7 @@ h1 {
 	color: white;
 	font-size: 35px;
 	margin-top: 20px;
-
+	font-weight: bold;
 }
 
 h2 {
@@ -154,6 +173,29 @@ hr {
 .icon {
 	width: 60px;
 	height: 60px;
+	opacity: 0.8;
+	
+	/*Transition*/
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	
+	/*Reflection*/
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+	}
+
+
+.icon:hover {  
+   opacity: 1;
+   
+   /*Reflection*/
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+ 
+   /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+
 	}
 
 .picofme {
@@ -161,4 +203,12 @@ hr {
 	margin: 0 10px 0 10px;
 	width: 200px;
 	height: 200px;
+}
+
+.picofme:hover  {
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
